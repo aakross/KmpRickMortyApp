@@ -57,6 +57,12 @@ kotlin {
             implementation(libs.koin.core)
             implementation(libs.koin.compose.viewmodel)
 
+            implementation(libs.coil.compose)
+            implementation(libs.coil.network.ktor)
+
+            implementation(libs.paging.compose.common)
+            implementation(libs.paging.common)
+
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)

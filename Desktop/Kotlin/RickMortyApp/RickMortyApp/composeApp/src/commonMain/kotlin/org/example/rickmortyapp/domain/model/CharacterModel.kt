@@ -1,8 +1,9 @@
 package org.example.rickmortyapp.domain.model
 
 data class CharacterModel(
-    val id: String,
+    val id: Int,
     val isAlive: Boolean,
-    val image: String
+    val image: String,
+    val name: String
 ) {
 }
