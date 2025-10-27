@@ -38,6 +38,6 @@ val dataModule = module {
     //Aqui tenemos todo preparado para ser inyectado
     factoryOf(::ApiService)
     //Cada que tengas que devolver un Repository se va a devolver un RepositoryImpl
-    factory<Repository> { RepositoryImpl(get(), get()) }
+    factory<Repository> { RepositoryImpl(get(), get(), get()) }
     factoryOf(::CharactersPagingSource)
 }
